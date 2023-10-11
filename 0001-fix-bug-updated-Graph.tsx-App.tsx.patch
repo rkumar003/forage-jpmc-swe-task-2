@@ -1,0 +1,150 @@
+From cc146d83a4ebc9edd00a40261bf1db79019ad804 Mon Sep 17 00:00:00 2001
+From: ramkumar <rkumar.rj96@gmail.com>
+Date: Thu, 12 Oct 2023 00:28:17 +0530
+Subject: [PATCH] fix bug - updated Graph.tsx & App.tsx
+
+---
+ src/.Graph.tsx.swp | Bin 0 -> 12288 bytes
+ src/App.tsx        |  28 +++++++++++++++++++++-------
+ src/Graph.tsx      |  13 +++++++++++--
+ 3 files changed, 32 insertions(+), 9 deletions(-)
+ create mode 100644 src/.Graph.tsx.swp
+
+diff --git a/src/.Graph.tsx.swp b/src/.Graph.tsx.swp
+new file mode 100644
+index 0000000000000000000000000000000000000000..0ac2b732ca05f0aa5ce648e3b060f56ae7805f96
+GIT binary patch
+literal 12288
+zcmeHNOK)5?6m~1M^a+Tv=#Il6I!Tn=NeY#!G_6{i(pEHW+NKp!s3y+6o|)UseaQA?
+zGNhprg++x>*06>RApQUg7Dxyo*dhJ`5(3mc8$R22UP%aRz*qV*bM52v_|EZhqIh}o
+z?$tRu9h_u%o@Ffg^@Mo%!h3r^|AaBgla*G&rJ368xp?LJ)f@Ad-n@3|)yb({1mEc@
+ztju@92A9da%<hX&S8AE8i)!xPs#E5j*TuyBJP9XMTTE!KRwhnXlng7ECC?jyR%^T1
+z@l&1w&%jO$9A&SZoSHN<FO^=TW6#~$Nyv|R20R0v0ndPEz%$?(@C<kcJOlqx26VoM
+zJw$AKi}-F8pL@1^7O(!pGvFEU40r}S1D*lTfM>un;2H1?cm_NJo`HWM13Y5vz&^&B
+z`{6wP|KI)l|L12I`wVy+h=35N0yDsA;AP+la0oaE>;t}knz0Xo$G}Zs3a9`9Fa|t1
+z%GlSySHLE)2D}9<0@s1#!1KT{;LjtBeGA+L?f~b3QQ$D}`(eg@0)7O305*Y}z#G6R
+z;EzL$eFJ;|+y;&VPYyyJ_!8IzYQPdO0Xz#F0`>#@fZq-<_7U(1m;!!zim@+%9H;`b
+zz<%I6aP}$iF|Y|d2HpoA0q+8a(-pu!o&nE*XW;+NfLO~jsVNdQ-fC*HSGmqGw!w%D
+zx<BzbI(o(q*unl+A{{3}X`bZMB$`3*ZM-K9ku0w+#}TfR#i4LwZiG&pu#4PVVCU(<
+z1Df2r8n?~1tj5T|YP|i;YNfMq#oDyr`iiB{Et%4K&(BJQUe9F0HR*<+h-*$YnI&{v
+z$W<Y436*DQgjnpf3L7Hf#ai8nRiOEDQv|IX3&n^X!R@(R1x8Vj@O)%MG^dHDol!b_
+zu4fiT`DzwN6sJl^9jA4QT6r@Lp(P@bY8eZKNtm4%Qsuat7q1Gk#)#K>oCbvx&~!mj
+z&XLZnW_>hw^v0=^wI~%(1{Jk<&CaxWhuVUiv;A<b!;rHY;~KdztgX?)V_3NaHaaHH
+zTNlQv&=`#u;q)bTjsS+jECH_wbT*FeIP#1w%nTQxXo@6gW;_~ns#}L9_9&txlVXUb
+zFiUH3y(PJhvs6(-Na5&mx(QFISFxq(QWPtsAk^@xmFm*Q(m>IdhN>9Ce6?Qcmy@0D
+zmFc$W^^z^W?KZj^Y<x=S3mPe3ZlQ+Cyk3{0jzUo7aasZ+=Gj3m%$ltvHA3Y@xS@Ho
+z+IQq$xfjC@OJ&xc$m7*acUN~eb7}W=&g9Ti8=v}zb*r&x8$UbMW}J$?Ye?WV<kr^9
+zk}bF;l#qL!$@_&rVH5~?Zi!}Z%#jo|WHb$nr0!g?-BkBCDV?QuoJLtY7|<NFGr1z<
+z$f(=MBW{Bi+!@W=mze&ueYB^jC}R|Iw@iDbHce&ICd%F950w@sYbbO*G}}w)w%MY=
+zl@;nHtrv?>_)3$D0pZ&HWcHdFHD!RYC<|K&_FYgH`VxllRlU|(;PvY~LGcYxQ;=RB
+zU7Wl}9Gg5{Nwaopz7F)HyEZe0CKoZXdRaJw&~6$K*P4e7n^)JuY=<@d7Wp(=bFdxE
+znN2t{)D4QJeM|6A2cZ-ov9P$a$Hos-NMsW0Sg>ZNX~A@BdVpAP_MsFbBME;80&-23
+zg-x!MI~hr=X(&^4vD>s}uHwRUuEuG7!}j#C3ZpU8gcTaDjV;!;DckrPGHcZv?r1T+
+z77f3HpvTC@(~lke;1qIx4{=P(+$hdctAka>#@tzL`r<U&wF#<-&7LymWEp4Zy+YP_
+zIMf@5($x#>%EH{Wg3xt1W}{ia>1Ix#LI;>vCiR@!xcH422zSG2p_2<0$~ZT@Gs)wo
+zkT$YGKAZ8f<g!CN0)@t9QxO9e37nvPK~vBV%^aW8!)Nf~y}_7V2F&r~+_ee8Z#2l8
+z>-*Nf8T+dZRn9rhF%BIZl;xnfy&fu6KEsO9^<i_g;W7!~SvYfBqwEqP2jyKgb>+^Z
+bpfXhfHQn>NFKaW6a_N^)Pd(Iz8j^njY^7*l
+
+literal 0
+HcmV?d00001
+
+diff --git a/src/App.tsx b/src/App.tsx
+index 0728518..d46a24c 100755
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -8,6 +8,7 @@ import './App.css';
+  */
+ interface IState {
+   data: ServerRespond[],
++  showGraph: boolean,
+ }
+ 
+ /**
+@@ -22,25 +23,38 @@ class App extends Component<{}, IState> {
+       // data saves the server responds.
+       // We use this state to parse data down to the child element (Graph) as element property
+       data: [],
++      showGraph: false,
+     };
+   }
+ 
+   /**
+-   * Render Graph react component with state.data parse as property data
++   * Render Graph    react component with state.data parse as property data
+    */
+   renderGraph() {
+-    return (<Graph data={this.state.data}/>)
++    if (this.state.showGraph){
++        return (<Graph data={this.state.data}/>)
++    }
+   }
+ 
+   /**
+    * Get new data from server and update the state with the new data
+    */
+   getDataFromServer() {
+-    DataStreamer.getData((serverResponds: ServerRespond[]) => {
+-      // Update the state by creating a new array of data that consists of
+-      // Previous data in the state and the new data from server
+-      this.setState({ data: [...this.state.data, ...serverResponds] });
+-    });
++        // Update the state by creating a new array of data that consists of
++        // Previous data in the state and the new data from server
++    let x = 0;
++    const interval = setInterval(() => {
++        DataStreamer.getData((serverResponds: ServerRespond[]) => {
++            this.setState({
++                data: serverResponds,
++                showGraph: true,
++            });
++        });
++        x++;
++        if (x > 1000) {
++            clearInterval(interval);
++        }
++    }, 100);
+   }
+ 
+   /**
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index 3b2a7da..02a770e 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -14,7 +14,7 @@ interface IProps {
+  * Perspective library adds load to HTMLElement prototype.
+  * This interface acts as a wrapper for Typescript compiler.
+  */
+-interface PerspectiveViewerElement {
++interface PerspectiveViewerElement extends HTMLElement {
+   load: (table: Table) => void,
+ }
+ 
+@@ -32,7 +32,7 @@ class Graph extends Component<IProps, {}> {
+ 
+   componentDidMount() {
+     // Get element to attach the table from the DOM.
+-    const elem: PerspectiveViewerElement = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
++    const elem = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
+ 
+     const schema = {
+       stock: 'string',
+@@ -49,6 +49,15 @@ class Graph extends Component<IProps, {}> {
+ 
+       // Add more Perspective configurations here.
+       elem.load(this.table);
++      elem.setAttribute('view', 'y_line');
++      elem.setAttribute('column-pivots', '["stock"]');
++      elem.setAttribute('row-pivots', '["timestamp"]');
++      elem.setAttribute('columns', '["total_ask_price"]');
++      elem.setAttribute('aggregates', `
++        {"stock":"distinct count",
++        "top_ask_price":"avg",
++        "top_bid_price":"avg",
++        "timestamp":"distinct count"}`);
+     }
+   }
+ 
+-- 
+2.34.1
+
